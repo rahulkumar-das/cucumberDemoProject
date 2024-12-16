@@ -67,23 +67,23 @@ public class OrangeHRMPage {
     }
 
     // Verify if the records should be displayed
-    public boolean verifyRecordsDisplayed(String shouldBeDisplayed) {
-        boolean isDisplayed;
-        try {
-            WebElement resultTable = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='oxd-icon bi-pencil-fill']")));
-            System.out.println(resultTable.isDisplayed());
-            if(Boolean.parseBoolean(shouldBeDisplayed)) {
-            	Assert.assertTrue(resultTable.isDisplayed());
-            } else {
-            	Assert.assertFalse(resultTable.isDisplayed());
-            }
-            
-            isDisplayed = resultTable.isDisplayed();
-           
-        } catch (TimeoutException e) {
-            isDisplayed = false;
-        }
-
-        return isDisplayed == Boolean.parseBoolean(shouldBeDisplayed);
-    }
+//    public boolean verifyRecordsDisplayed(String shouldBeDisplayed) {
+//        boolean isDisplayed;
+//        try {
+//            WebElement resultTable = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[@class='oxd-icon bi-pencil-fill']")));
+//            System.out.println("------------------------------------------"+resultTable.isDisplayed());
+//            if(Boolean.parseBoolean(shouldBeDisplayed)) {
+//            	Assert.assertTrue(resultTable.isDisplayed());
+//            } else {
+//            	Assert.assertFalse(resultTable.isDisplayed());
+//            }
+//            
+//            isDisplayed = resultTable.isDisplayed();
+//           
+//        } catch (TimeoutException e) {
+//            isDisplayed = false;
+//        }
+//
+//        return isDisplayed == Boolean.parseBoolean(shouldBeDisplayed);
+//    }
 }

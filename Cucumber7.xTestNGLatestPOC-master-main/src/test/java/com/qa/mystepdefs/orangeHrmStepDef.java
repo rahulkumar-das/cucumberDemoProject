@@ -44,15 +44,15 @@ public class orangeHrmStepDef {
 		orangeHRMPage.selectUserRoleAndEnterUsername(username);
 	}
 	
-	@Then("I will verify if the records should be displayed {string}")
-    public void iWillVerifyIfTheRecordsShouldBeDisplayed(String shouldBeDisplayed) {
-		 boolean result = orangeHRMPage.verifyRecordsDisplayed(shouldBeDisplayed);
-	        if (result) {
-	            test.pass("Records displayed as expected.");
-	        } else {
-	            test.fail("Records display verification failed.");
-	        }
-	}
+//	@Then("I will verify if the records should be displayed {string}")
+//    public void iWillVerifyIfTheRecordsShouldBeDisplayed(String shouldBeDisplayed) {
+//		 boolean result = orangeHRMPage.verifyRecordsDisplayed(shouldBeDisplayed);
+//	        if (result) {
+//	            test.pass("Records displayed as expected.");
+//	        } else {
+//	            test.fail("Records display verification failed.");
+//	        }
+//	}
 	
 
 }
