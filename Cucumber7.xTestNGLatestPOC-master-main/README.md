@@ -34,6 +34,3 @@ You can also add or remove <test> elements in the testng.xml file to control the
 
 # Contributing
 Feel free to submit issues or pull requests if you find any bugs or have suggestions for improvements.
-
-# License
-This project is licensed under the MIT License. See the LICENSE file for more information.
